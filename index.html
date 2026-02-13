@@ -1,106 +1,222 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>انضم الآن</title>
+<title>BAZOKA GOLD</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin:0;
-    font-family:Tahoma, Arial;
-    background:#0c0c0c;
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+    font-family:'Cairo',sans-serif;
+    background:radial-gradient(circle at top,#111 0%,#050505 60%);
     color:#fff;
+    overflow-x:hidden;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(145deg,#000,#0a0a0a);
+}
+
+.container{max-width:900px;margin:auto}
+
+.badge{
+    display:inline-block;
+    background:linear-gradient(90deg,#d4af37,#ffd700);
+    color:#000;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:800;
+    margin-bottom:20px;
+    animation:fadeIn 1s ease forwards;
+}
+
+h1{
+    font-size:44px;
+    font-weight:900;
+    margin-bottom:20px;
+    background:linear-gradient(90deg,#fff,#d4af37);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.subtitle{
+    color:#aaa;
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.cta{
+    display:inline-block;
+    background:linear-gradient(90deg,#2AABEE,#1f8ed1);
+    padding:20px 48px;
+    font-size:22px;
+    border-radius:14px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:800;
+    box-shadow:0 15px 40px rgba(42,171,238,.4);
+    transition:.35s;
+}
+
+.cta:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 25px 60px rgba(42,171,238,.6);
+}
+
+.section{
+    padding:70px 20px;
     text-align:center;
 }
 
-.container {
-    padding:40px 20px;
-    max-width:700px;
-    margin:auto;
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+    margin-top:40px;
 }
 
-h1 {
-    color:#d4af37;
-    font-size:32px;
-    margin-bottom:15px;
-}
-
-p {
-    font-size:18px;
-    color:#ccc;
-    line-height:1.7;
-}
-
-.features {
-    text-align:right;
-    margin:30px 0;
-}
-
-.features p {
-    background:#151515;
-    padding:15px;
-    border-radius:8px;
-    margin:10px 0;
-}
-
-.btn {
-    display:inline-block;
-    background:#2AABEE;
-    color:#fff;
-    padding:18px 35px;
-    font-size:20px;
-    border-radius:8px;
-    text-decoration:none;
-    margin-top:25px;
+.card{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:18px;
+    backdrop-filter:blur(8px);
     transition:.3s;
 }
 
-.btn:hover {
-    background:#229ED9;
-    transform:scale(1.05);
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#d4af37;
 }
 
-.note {
-    margin-top:30px;
-    color:#999;
-    font-size:14px;
+.card h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+.urgency{
+    margin-top:50px;
+    font-size:20px;
+    color:#ffd700;
+    font-weight:700;
+}
+
+.countdown{
+    font-size:34px;
+    margin-top:15px;
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+.sticky{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#0a0a0a;
+    padding:15px;
+    border-top:1px solid #222;
+}
+
+.sticky a{
+    display:block;
+    background:linear-gradient(90deg,#2AABEE,#1f8ed1);
+    padding:16px;
+    text-align:center;
+    border-radius:10px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:800;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(20px)}
+    to{opacity:1;transform:translateY(0)}
+}
+
+@media(max-width:600px){
+    h1{font-size:30px}
+    .cta{font-size:18px;padding:16px 28px}
 }
 </style>
 </head>
 
 <body>
 
+<section class="hero">
 <div class="container">
 
-<h1>فرص حقيقية تبدأ من هنا</h1>
+<div class="badge">دخول حصري محدود</div>
 
-<p>
-انضم الآن إلى القناة الخاصة واحصل على توصيات مباشرة،
-متابعة لحظية، وفرص لا يتم نشرها للعامة.
+<h1>مش مجرد قناة… ده مصدر فرص حقيقية</h1>
+
+<p class="subtitle">
+متابعة مباشرة + إشارات واضحة + فرص يتم مشاركتها لحظيًا داخل مجتمع خاص
 </p>
 
-<a class="btn" href="https://t.me/BAZOKAGOLD1" target="_blank">
+<a class="cta" href="https://t.me/BAZOKAGOLD1" target="_blank">
 🚀 دخول القناة الآن
 </a>
 
+<div class="urgency">التسجيل مفتوح لفترة محدودة</div>
+<div class="countdown" id="timer">05:00</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2 style="font-size:32px;margin-bottom:10px">ماذا ستحصل بعد الدخول؟</h2>
+
 <div class="features">
-<p>✔ توصيات واضحة بدون تعقيد</p>
-<p>✔ متابعة مستمرة للسوق</p>
-<p>✔ نتائج حقيقية وليست عشوائية</p>
-<p>✔ مجتمع خاص للمشتركين فقط</p>
-<p>✔ الدخول مجاني لفترة محدودة</p>
+
+<div class="card">
+<h3>متابعة لحظية</h3>
+<p>كل التحديثات بتوصلك فور حدوثها بدون تأخير</p>
 </div>
 
-<a class="btn" href="https://t.me/BAZOKAGOLD1" target="_blank">
-🔥 انضم قبل غلق التسجيل
-</a>
+<div class="card">
+<h3>توصيات واضحة</h3>
+<p>بدون تعقيد أو تحليل مبالغ فيه</p>
+</div>
 
-<p class="note">
-الدخول متاح الآن عبر هذا الرابط فقط
-</p>
+<div class="card">
+<h3>مجتمع خاص</h3>
+<p>الدخول مش متاح للعامة — فقط عبر الرابط</p>
+</div>
+
+<div class="card">
+<h3>فرص مستمرة</h3>
+<p>مش مرة وخلاص… تدفق دائم للفرص</p>
+</div>
 
 </div>
+</section>
+
+<div class="sticky">
+<a href="https://t.me/BAZOKAGOLD1" target="_blank">🔥 اضغط هنا وانضم الآن</a>
+</div>
+
+<script>
+// Countdown Fake Urgency
+let time = 300;
+const timer = document.getElementById('timer');
+
+setInterval(()=>{
+    let minutes = Math.floor(time/60);
+    let seconds = time%60;
+    seconds = seconds<10?'0'+seconds:seconds;
+    timer.innerHTML = minutes+":"+seconds;
+    if(time>0){time--}
+},1000);
+</script>
 
 </body>
 </html>
